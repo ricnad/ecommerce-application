@@ -27,7 +27,7 @@ trait FlashMessages
      * @var array
      */
     protected $warningMessages = [];
-}
+
 
 /**
  * @param $message
@@ -88,4 +88,5 @@ protected function showFlashMessages()
     session()->flash('info', $this->infoMessages);
     session()->flash('success', $this->successMessages);
     session()->flash('warning', $this->warningMessages);
+}
 }
